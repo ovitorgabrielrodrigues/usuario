@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-    // Verifise se o Email já existe. Pesquisar os scripts da classe JpaRepository
+    // Verifise se o Email já existe.
     boolean existsByEmail(String email);
 
     Optional<Usuario> findByEmail(String email);
